@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -26,10 +27,14 @@ ai_models/whisper.cpp/models/ggml-*.bin
 ai_models/whisper.cpp/build/
 ai_models/whisper.cpp/build-*/
 
-# 配置文件中的敏感信息（如果你在 config.yaml 中填了 API Key）
-# config.yaml   # 如果你不希望上传自己的配置，可以取消注释
-# 建议上传一个 config.yaml.example 示例文件
 
 # IDE 配置
 .vscode/
 .idea/
+=======
+*.log
+__pycache__
+temp/
+output/
+logs/
+>>>>>>> 7c9ccfe47b1d96619d898484813e55504bffb272
