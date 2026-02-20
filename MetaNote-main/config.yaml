@@ -1,0 +1,32 @@
+asr:
+  device: cpu
+  mode: 本地模式 (whisper.cpp)
+  model_path: ../ai_models/whisper.cpp/models/ggml-base.bin
+  server_url: http://localhost:8000
+  whisper_cli_path: ../ai_models/whisper.cpp/build/bin/whisper-cli
+image_understanding:
+  ollama:
+    model: llava:13b
+    url: http://localhost:11434/api/generate
+  provider: qwen
+  qwen:
+    api_key: 
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen-vl-plus
+logging:
+  file: metanote.log
+  level: INFO
+note_generator:
+  provider: qwen
+  qwen:
+    api_key: 
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen-max
+    system_prompt: 你是一位专业的教育内容编辑，擅长将课程视频的文字记录和图像整理成结构化的学习笔记。
+output_dir: ../temp/output
+temp_dir: ../temp/temp
+video:
+  parallel_requests: 2
+  sample_rate: 1
+  scene_threshold: 0.3
+  stable_duration: 3
